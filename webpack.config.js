@@ -1,11 +1,19 @@
-const path = require("path");
-// const { mainModule } = require("process");
+import path from "path";
+import { fileURLToPath } from "url";
 
-module.exports = {
-    entry: "./src/index.js",
-    output: {
-        filename: "main.js",
-        path: path.resolve(__dirname, "dist"),
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default {
+  mode: "development",     
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    library: {
+      type: "module",
     },
-}
-
+  },
+  experiments: {
+    outputModule: true,
+  },
+};
