@@ -1,0 +1,38 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content {
+  background-image: url("../assets/bgImage.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bgImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.footer {
+  position: fixed;
+  bottom: -2px;
+  text-align: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
