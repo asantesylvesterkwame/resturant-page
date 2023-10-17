@@ -15,6 +15,8 @@ const Navbar = () => {
 
   const homeLink = document.createElement("a");
   homeLink.innerHTML = "Home";
+  homeLink.style.cssText = "border-bottom: 2px solid #fff";
+
   homeLink.className = "homeLink";
 
   NavLinkDiv.appendChild(homeLink);
@@ -39,21 +41,33 @@ const Navbar = () => {
 
   function switchToHome() {
     homeSection.style.display = "block";
+    homeLink.style.cssText = "border-bottom: 2px solid #fff";
     menuSection.style.display = "none";
+    menuLink.style.cssText = "border-bottom: none";
+
     contactSection.style.display = "none";
+    contactLink.style.cssText = "border-bottom: none";
   }
   function switchToMenu() {
     homeSection.style.display = "none";
+    homeLink.style.cssText = "border-bottom: none";
+
     menuSection.style.display = "block";
+    menuLink.style.cssText = "border-bottom: 2px solid #fff";
+
     contactSection.style.display = "none";
+    contactLink.style.cssText = "border-bottom: none";
   }
   function switchToContact() {
     homeSection.style.display = "none";
+    homeLink.style.cssText = "border-bottom: none";
+
     menuSection.style.display = "none";
+    menuLink.style.cssText = "border-bottom: none";
+
     contactSection.style.display = "block";
+    contactLink.style.cssText = "border-bottom: 2px solid #fff";
   }
-
-
 
   homeLink.addEventListener("click", switchToHome);
   menuLink.addEventListener("click", switchToMenu);
