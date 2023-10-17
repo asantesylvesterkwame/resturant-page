@@ -1,0 +1,65 @@
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.mainMenuDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodMenuContainer {
+  width: 750px;
+  background: rgb(0, 0, 0, 0.5);
+  padding: 2%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  border-radius: 25px;
+}
+
+.foodMenuDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5%;
+  gap: 20px;
+  background: rgb(0, 0, 0, 0.75);
+  border-radius: 25px;
+  transition:  0.25s ease;
+  cursor: pointer;
+}
+
+.foodMenuDiv:hover{
+      background: rgb(255, 255, 255, 0.25);
+      
+
+}
+
+
+.foodImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+
+.packageDetails{
+    text-align: center;
+}
