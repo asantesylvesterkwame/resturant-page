@@ -1,0 +1,30 @@
+.navBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background: rgb(0, 0, 0, 0.5);
+  padding: 2.5%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  font-family: "golos text";
+  font-size: 64px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+}
+
+.homeLink, .menuLink, .contactLink {
+  transition: transform 0.5s ease;
+}
+.homeLink:hover , .menuLink:hover, .contactLink:hover{
+  transform: translateY(-10px);
+}
+
+
