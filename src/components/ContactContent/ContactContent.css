@@ -1,0 +1,38 @@
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.mapsImage {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 25px;
+
+}
+
+.contactContainer {
+  width: 750px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 10px;
+  padding: 5%;
+  margin-top: 5%;
+  background: rgb(0, 0, 0, 0.5);
+  border-radius: 25px;
+  font-size: 20px;
+}
