@@ -1,19 +1,22 @@
-import path from "path";
-import { fileURLToPath } from "url";
+const path = require("path");
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-export default {
-  mode: "development",     
+module.exports = {
   entry: "./src/index.js",
+  mode: "development",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    library: {
-      type: "module",
-    },
   },
-  experiments: {
-    outputModule: true,
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
 };
