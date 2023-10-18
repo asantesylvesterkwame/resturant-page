@@ -236,7 +236,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _HomeContent_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeContent.css */ \"./src/components/HomeContent/HomeContent.css\");\n\r\n\r\nconst HomeContent = () => {\r\n  const mainDiv = document.createElement(\"div\");\r\n  mainDiv.className = \"main\";\r\n  mainDiv.classList.add(\"fade-in\");\r\n\r\n  mainDiv.id = \"HomeSectionDiv\";\r\n\r\n  const container = document.createElement(\"div\");\r\n  container.className = \"container\";\r\n  mainDiv.appendChild(container);\r\n\r\n  const aboutParagragh = document.createElement(\"p\");\r\n  aboutParagragh.innerHTML = \"Best Burger in your country\";\r\n  container.appendChild(aboutParagragh);\r\n\r\n  const sloganParagragh = document.createElement(\"p\");\r\n  sloganParagragh.innerHTML = \"Made with passion since 1902\";\r\n  container.appendChild(sloganParagragh);\r\n\r\n  const image = new Image();\r\n  image.src = \"../../assets/chef.jpg\";\r\n  image.className = \"chefImage\";\r\n  container.appendChild(image);\r\n\r\n  const conclusionDiv = document.createElement(\"p\");\r\n  conclusionDiv.innerHTML = \"Order Online or Visit Us\"\r\n  container.appendChild(conclusionDiv);\r\n\r\n  return mainDiv;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeContent);\r\n\n\n//# sourceURL=webpack://resturant-page/./src/components/HomeContent/HomeContent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _HomeContent_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeContent.css */ \"./src/components/HomeContent/HomeContent.css\");\n/* harmony import */ var _assets_chef_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/chef.jpg */ \"./assets/chef.jpg\");\n\r\n\r\n\r\nconst HomeContent = () => {\r\n  const mainDiv = document.createElement(\"div\");\r\n  mainDiv.className = \"main\";\r\n  mainDiv.classList.add(\"fade-in\");\r\n\r\n  mainDiv.id = \"HomeSectionDiv\";\r\n\r\n  const container = document.createElement(\"div\");\r\n  container.className = \"container\";\r\n  mainDiv.appendChild(container);\r\n\r\n  const aboutParagragh = document.createElement(\"p\");\r\n  aboutParagragh.innerHTML = \"Best Burger in your country\";\r\n  container.appendChild(aboutParagragh);\r\n\r\n  const sloganParagragh = document.createElement(\"p\");\r\n  sloganParagragh.innerHTML = \"Made with passion since 1902\";\r\n  container.appendChild(sloganParagragh);\r\n\r\n  const image = new Image();\r\n  image.src = _assets_chef_jpg__WEBPACK_IMPORTED_MODULE_1__;\r\n  image.className = \"chefImage\";\r\n  container.appendChild(image);\r\n\r\n  const conclusionDiv = document.createElement(\"p\");\r\n  conclusionDiv.innerHTML = \"Order Online or Visit Us\"\r\n  container.appendChild(conclusionDiv);\r\n\r\n  return mainDiv;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeContent);\r\n\n\n//# sourceURL=webpack://resturant-page/./src/components/HomeContent/HomeContent.js?");
 
 /***/ }),
 
@@ -307,6 +307,16 @@ eval("module.exports = __webpack_require__.p + \"62c583d2b1757681ed23.jpg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"816e99be0317b706bfe7.jpg\";\n\n//# sourceURL=webpack://resturant-page/./assets/burger3.jpg?");
+
+/***/ }),
+
+/***/ "./assets/chef.jpg":
+/*!*************************!*\
+  !*** ./assets/chef.jpg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d26a02956632bdfbdaf7.jpg\";\n\n//# sourceURL=webpack://resturant-page/./assets/chef.jpg?");
 
 /***/ }),
 

@@ -1,4 +1,5 @@
 import "./HomeContent.css";
+import homeImage from "../../../assets/chef.jpg"
 
 const HomeContent = () => {
   const mainDiv = document.createElement("div");
@@ -20,7 +21,7 @@ const HomeContent = () => {
   container.appendChild(sloganParagragh);
 
   const image = new Image();
-  image.src = "../../assets/chef.jpg";
+  image.src = homeImage;
   image.className = "chefImage";
   container.appendChild(image);
 
