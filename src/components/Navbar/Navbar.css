@@ -22,6 +22,8 @@
 
 .homeLink, .menuLink, .contactLink {
   transition: transform 0.5s ease;
+  cursor: pointer;
+
 }
 .homeLink:hover , .menuLink:hover, .contactLink:hover{
   transform: translateY(-10px);
